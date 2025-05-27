@@ -15,5 +15,23 @@ The configurations were done using **AWS Management Console**.
         - (Optional) For Anthropic Claude you'll need to submit a Use Case to use it. See more at [anthropic_claude](anthropic_claude/use_case_details.txt)
     - Click on Request Model Access
     - Follow the requests checking the value on 'Access Status' column
+
+<br />
+
+## Choosing the Foundation Model (LLM)
+
+- Bedrock > Foundation Models > Model Catalog
+    - Choose the Category (Vendor)
+    - Choose the Model (LLM)
+    - Choose the Inference (On demand/Provisioned)
+    - Choose the Configurations (e.g. Temperature, Top P, Response Length, etc)
+
+<br />
+
+## Trying the Foundation Model (LLM)
+
+- Bedrock > Playground > Chat/Text / Image/Video playground
+
+
     
 
