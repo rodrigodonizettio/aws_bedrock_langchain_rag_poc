@@ -1,6 +1,14 @@
 # aws_bedrock_langchain_rag_poc
 AWS Bedrock knowledge based on Lee Assam's course Learning Amazon Bedrock.
 
+Here you'll find interactions with the SDKs:
+- boto3
+- langchain
+
+LLMs explored in the codes:
+- Amazon Titan Text Express v1
+- Meta Llama3 70b Instruct v1.0
+
 The configurations were done using **AWS Management Console**.
 
 <br />
