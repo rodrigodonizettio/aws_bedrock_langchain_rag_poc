@@ -26,6 +26,7 @@ The configurations were done using **AWS Management Console**.
     - Choose the Inference (On demand/Provisioned)
     - Choose the Configurations (e.g. Temperature, Top P, Response Length, etc)
 
+- See more at [Bedrock Supported Models](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html)
 <br />
 
 ## Trying the Foundation Model (LLM)
