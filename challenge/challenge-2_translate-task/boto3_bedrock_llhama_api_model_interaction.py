@@ -22,12 +22,6 @@ except Exception as e:
     print(f"Error creating Bedrock client: {e}")
     sys.exit(1)
 
-inference_modifier = {
-    "temperature": 0.2,  # Adjusted temperature for more focused responses (Range: 0.0 to 1.0, where 0.0 is more precise and conservative. 1.0 is more creative and random)
-    "topP": 0.2,  # cumulative probability. (Range: 0.0 to 1.0, where 0.0 is more conservative in choosing the vocabulary words. 1.0 is more creative and random)
-    "maxTokenCount": 1000  # Maximum number of tokens to generate in the response
-}
-
 prompt_data = """
 You're an English and French translator specialist.
 Translate to French the following English text: 'Learning about Generative AI is fun and exciting using Amazon Bedrock'.
