@@ -58,6 +58,8 @@ You can see below how to do that.
 
 - Bedrock > Playground > Chat/Text / Image/Video playground
 
+<br />
 
-    
+## Projects Dependencies
 
+Some Python modules must be installed for proper code working: ```pip install -r aws_bedrock/requirements.txt```
