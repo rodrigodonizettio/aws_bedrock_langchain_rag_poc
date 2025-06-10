@@ -1,15 +1,32 @@
 # aws_bedrock_langchain_rag_poc
 AWS Bedrock knowledge based on Lee Assam's course Learning Amazon Bedrock.
 
-Here you'll find interactions with the SDKs:
-- boto3
-- langchain
+Following the code inside **aws_bedrock** folder you'll be able to learn AI concepts until you reach the final file [**bedrock_rag_streamlit_chat_bot.py**](aws_bedrock/bedrock_rag_streamlit_chat_bot.py) where we build a Chat Bot application using:
+- LangChain
+    - LLM Embedding for VectorDB
+    - LLM and Prompt for Chat interaction
+    - Chain for Query LLM interaction
+    - Chat Message Histories for Memory context
+    
+- PyPDF for PDF files management
+
+- Facebook
+    - FAISS (Facebook AI Similarity Search) for VectorDB clustering and similarity search tasks
+
+- StreamLit for Chat Web App
+
+![Final Chat Bot Project Result](aws_bedrock/bedrock_rag_streamlit_chat_bot.png)
+
+<br />
 
 LLMs explored in the codes:
+- Amazon Titan Embed Text-v1
 - Amazon Titan Text Express v1
 - Meta Llama3 70b Instruct v1.0
 
-The configurations were done using **AWS Management Console**.
+
+The AWS Bedrock configurations for this course were done using **AWS Management Console**.
+You can see below how to do that.
 
 <br />
 
