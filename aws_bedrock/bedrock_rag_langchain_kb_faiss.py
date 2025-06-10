@@ -1,5 +1,3 @@
-import boto3
-import json
 import sys
 import traceback
 # <deprecated> from langchain_community.embeddings.bedrock import BedrockEmbeddings
