@@ -10,8 +10,7 @@ Following the code inside **aws_bedrock** folder you'll be able to learn AI conc
     
 - PyPDF for PDF files management
 
-- Facebook
-    - FAISS (Facebook AI Similarity Search) for VectorDB clustering and similarity search tasks
+- Facebook FAISS (Facebook AI Similarity Search) for VectorDB clustering and similarity search tasks
 
 - StreamLit for Chat Web App
 
@@ -30,7 +29,7 @@ You can see below how to do that.
 
 <br />
 
-## AWS Bedorck Setup
+## AWS Bedrock Setup
 
 ### Enabling LLM (Models)
 
