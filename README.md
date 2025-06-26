@@ -1,20 +1,32 @@
 # aws_bedrock_langchain_rag_poc
-AWS Bedrock knowledge based on Lee Assam's course Learning Amazon Bedrock.
+AWS Bedrock knowledge based on Lee Assam's courses:
+- Learning Amazon Bedrock
+- Building Applications using Amazon Bedrock
 
-Following the code inside **aws_bedrock** folder you'll be able to learn AI concepts until you reach the final file [**bedrock_rag_streamlit_chat_bot.py**](aws_bedrock/bedrock_rag_streamlit_chat_bot.py) where we build a Chat Bot application using:
+At the file [**bedrock_rag_streamlit_chat_bot.py**](aws_bedrock/bedrock_rag_streamlit_chat_bot.py) we build a Chat Bot application where we apply the Retrieval-Augmented Generation (RAG) concept:
+
+![Final Chat Bot Project Result](aws_bedrock/bedrock_rag_streamlit_chat_bot.png)
+
+Following the code inside **aws_bedrock** folder you'll be able to learn AI concepts using the tools:
+- Bedrock
+    - Foundation Models (LLMs)
+    - Knowledge Base (KB)
+
 - LangChain
     - LLM Embedding for VectorDB
     - LLM and Prompt for Chat interaction
     - Chain for Query LLM interaction
-    - Chat Message Histories for Memory context
-    
-- PyPDF for PDF files management
+    - Chat Message History for Memory context
 
 - Facebook FAISS (Facebook AI Similarity Search) for VectorDB clustering and similarity search tasks
 
-- StreamLit for Chat Web App
+- AWS IAM
 
-![Final Chat Bot Project Result](aws_bedrock/bedrock_rag_streamlit_chat_bot.png)
+- AWS S3
+
+- PyPDF for PDF files management
+
+- StreamLit for Chat Web App
 
 <br />
 
