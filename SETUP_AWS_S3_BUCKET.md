@@ -11,3 +11,7 @@ The configurations were done using **AWS Management Console**.
         - Choose the AWS Region
         - Choose Bucket name
     - Click on Create Bucket
+
+### File to upload inside the S3 Bucket
+
+- [Employee-Handbook.pdf](aws_bedrock/Employee-Handbook.pdf)
