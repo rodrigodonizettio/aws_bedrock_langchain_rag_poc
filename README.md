@@ -18,6 +18,8 @@ Following the code inside **aws_bedrock** folder you'll be able to learn AI conc
     - Chain for Query LLM interaction
     - Chat Message History for Memory context
 
+- AWS Kendra (VectorDB/Vector Store)
+
 - Facebook FAISS (Facebook AI Similarity Search) for VectorDB clustering and similarity search tasks
 
 - AWS IAM
@@ -90,7 +92,7 @@ The configurations were done using **AWS Management Console**.
 
 - Bedrock > Builder tools > Knowledge Bases
     - Create > Knowledge Base with vector store
-    - Step#1: Provide Knowledge Base details
+    - Provide Knowledge Base details
         - Choose the Knowledge Base Name
         - IAM permissions
             - Create and use a new service role
@@ -98,21 +100,15 @@ The configurations were done using **AWS Management Console**.
         - Choose data source
             - Amazon S3
         - Click on Next button
-    - Step#2: Configure data source
+    - Configure data source
         - Data source name
             - Choose the Data Source Knowledge Base Name
         - S3 source
             - Paste the S3 URI where you stored your content data
         - Chunking strategy
             - Choose Semantic chunking
-        - Max buffer size for comparing sentence groups
-            - 0 (default)
-        - Max token size for a chunk
-            - 300 (default)
-        - Breakpoint threshold for sentence group similarity
-            - 95 (default)
         - Click on Next button
-    - Step#3: Configure data storage and processing
+    - Configure data storage and processing
         - Embeddings model
             - Titan Text Embedding V2
         - Vector store
@@ -120,9 +116,10 @@ The configurations were done using **AWS Management Console**.
                 - Quick create a new vector store
             - Vector store type
                 - Amazon OpenSearch Serverless
-    - Step#4: Review and Create
+        - Click on Next button
+    - Review and Create
         - Click on Create knowledge base button
-    - Step#5: Sync the Data Source
+    - Sync the Data Source
         - Wait until the Data source is created
         - Check the Knowledge Base in Bedrock > Builder tools > Knowledge Bases
         - Click on Sync button 
