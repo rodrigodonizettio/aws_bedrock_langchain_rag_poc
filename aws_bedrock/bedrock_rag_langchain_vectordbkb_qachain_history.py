@@ -4,7 +4,7 @@ import traceback
 from langchain.chains import ConversationalRetrievalChain
 # <deprecated> from langchain.llms.bedrock import Bedrock # https://pypi.org/project/langchain/ ; https://pypi.org/project/langchain-community/
 from langchain_aws import BedrockLLM  # https://pypi.org/project/langchain-aws/ ;
-# <deprecated> from langchain_community.retrievers import AmazonKnowledgeBasesRetriever
+# <deprecated> from langchain_community.retrievers.bedrock import AmazonKnowledgeBasesRetriever
 from langchain_aws.retrievers.bedrock import AmazonKnowledgeBasesRetriever
 from langchain.prompts.prompt import PromptTemplate
 from langchain.memory import ConversationBufferMemory
