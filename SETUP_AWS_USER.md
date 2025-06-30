@@ -11,6 +11,9 @@ The configurations were done using **AWS Management Console**.
     - Create a Group
         - Choose Usergroup name
         - Choose the Policy 'AmazonBedrockFullAccess'
+            - Click on Attach policies
+        - Choose the Policy 'AmazonKendraFullAccess'
+            - Click on Attach policies
         - Click on Create Usergroup
     - Select the Usergroup you've just created
     - Next > Create User
