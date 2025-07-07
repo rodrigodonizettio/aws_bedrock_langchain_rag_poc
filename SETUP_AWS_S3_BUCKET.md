@@ -12,6 +12,10 @@ The configurations were done using **AWS Management Console**.
         - Choose Bucket name
     - Click on Create Bucket
 
-### File to upload inside the S3 Bucket
+### File to upload inside the S3 Bucket to use as a KB content
 
 - [Employee-Handbook.pdf](aws_bedrock/Employee-Handbook.pdf)
+
+### File to upload inside the S3 Bucket to use as OpenAPI documentation with the Lambda Function
+
+- [pto_api.yml](aws_lambda/pto_api.yml)
