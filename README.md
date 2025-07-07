@@ -11,6 +11,10 @@ Following the code inside **aws_bedrock** folder you'll be able to learn AI conc
 - Bedrock
     - Foundation Models (LLMs)
     - Knowledge Base (KB)
+    - Agent
+        - Prompt Instructions
+        - KB Instructions
+        - Action Group Instructions (OpenAPI Schema)
 
 - LangChain
     - LLM Embedding for VectorDB
@@ -124,4 +128,57 @@ The configurations were done using **AWS Management Console**.
         - Check the Knowledge Base in Bedrock > Builder tools > Knowledge Bases
         - Click on Sync button 
 
+<br />
 
+### Agent
+
+Here are the steps to create the AWS Bedrock Agent that'll be used in the cloud provider to integrate with the Lambda that interacts with our PTO (Paid Time Off) API.
+To check how the AWS Lambda was created see the [SETUP_AWS_LAMBDA.md](SETUP_AWS_LAMBDA.md) file.
+
+The configurations were done using **AWS Management Console**.
+
+- Bedrock > Builder tools > Agents > Create agent
+    - Choose a name
+    - Click on Create button
+    - Click on your Agent name link
+    - Click on Edit in Agent Builder
+        - Agent resource role
+            - Click on create and use a new service role
+        - Select model
+            - Click on Select model button and choose the desired LLM
+        - Instructions for the Agent
+            - Fill with the content inside [agent_instructions.txt](aws_bedrock/agent_instructions.txt)
+        - Addtitional settings
+            - User input
+                - Enabled
+        - Click on Save and exit button to create the IAM Role
+
+    - Click on your Agent name link
+    - Click on Edit in Agent Builder
+        - Action groups
+            - Click on Add button
+            - Choose the Action group name
+            - Action group type
+                - Choose Define with API Schemas
+            - Action group invocation
+                - Choose Select an existing Lambda function
+                - Select Lambda function
+                    - Choose the Lambda name you created during the [SETUP_AWS_LAMBDA.md](SETUP_AWS_LAMBDA.md)
+            - Action group schema
+                - S3 Url
+                    - Click on Browse S3 and choose the [pto_api.yml](aws_lambda/pto_api.yml) file you created during the [SETUP_AWS_S3_BUCKET.md](SETUP_AWS_S3_BUCKET.md)
+            - Click on Create button
+        - Knowledge Bases
+            - Click on Add button
+            - Select the KB you created in the [Knowledge Base (KB)](#knowledge-base-(kb)) section of this file
+            - Knowledge Base instructions for Agent
+            - Fill with the content inside [agent_kb_instructions.txt](aws_bedrock/agent_kb_instructions.txt)
+            - Click on Add button
+        - Click on Save and exit button to update the Agent configurations
+    
+    - In Test panel
+        - Click on Prepare button
+    - Click on Create Alias button
+        - Choose "v1" as Alias name
+        - Click on Create alias button
+    - Then copy the Agent ARN and give it permission to invoke the AWS Lambda function (see more in [SETUP_AWS_LAMBDA.md](SETUP_AWS_LAMBDA.md))
