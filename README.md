@@ -30,6 +30,8 @@ Following the code inside **aws_bedrock** folder you'll be able to learn AI conc
 
 - AWS S3
 
+- AWS Lambda
+
 - PyPDF for PDF files management
 
 - StreamLit for Chat Web App
